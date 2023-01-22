@@ -12,16 +12,16 @@ document.body.onkeyup = function(e) {
             var x1 = 3*Math.random()|0
             var x2 = 3*Math.random()|0
         if (x1 == 1){
-          x = x + Math.floor(Math.random()*50)
+          x = x + Math.floor(Math.random()*20)
         }
         if (x1 == 2){
-          x = x - Math.floor(Math.random()*50)
+          x = x - Math.floor(Math.random()*20)
         }
         if (x2 == 1){
-          y = y + Math.floor(Math.random()*50)
+          y = y + Math.floor(Math.random()*20)
         }
         if (x2 == 2){
-          y = y - Math.floor(Math.random()*50)
+          y = y - Math.floor(Math.random()*20)
         }
            l.beginPath();
               l.strokeStyle = q;
