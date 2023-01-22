@@ -9,26 +9,20 @@ document.body.onkeyup = function(e) {
   if (e.keyCode == 82) {
     function PerformCalc() {
       if (up == true ) {
-        for (var i=0;i<500;i++)
-        {
-        
-          for (var i=0;i<500;i++)
-          {
             var x1 = 3*Math.random()|0
             var x2 = 3*Math.random()|0
         if (x1 == 1){
-          x = x + 10
+          x = x + Math.floor(Math.random()*50)
         }
         if (x1 == 2){
-          x = x - 10
+          x = x - Math.floor(Math.random()*50)
         }
         if (x2 == 1){
-          y = y + 10
+          y = y + Math.floor(Math.random()*50)
         }
         if (x2 == 2){
-          y = y - 10
+          y = y - Math.floor(Math.random()*50)
         }
-
            l.beginPath();
               l.strokeStyle = q;
                 l.arc(x, y, j, 0, Math.PI * 2, false);
@@ -38,12 +32,9 @@ document.body.onkeyup = function(e) {
         }
           }
       }
-      
-
-      }
-    setInterval(PerformCalc, 250);
+    setInterval(PerformCalc, 2);
   
-}
+
     if (e.keyCode == 38) {
     for (var i=0;i<500;i++)
 {
@@ -102,7 +93,7 @@ x = x + 0.1
     
   }
 };
-var j = Math.floor(Math.random()*5);
+var j = Math.floor(Math.random()*20);
 while (j < 2){
   j += Math.floor(Math.random()*3);
 }
